@@ -2,17 +2,17 @@
 ## Note Taker
 This is an easy-to-use note-taking web application that is intended for users to write, save, and delete notes. Note Taker is supported by an Express.js back end, and will save and retrieve note data from a JSON file.
 
-### Live View on Heroku
-[https://protected-dusk-42650.herokuapp.com/](https://protected-dusk-42650.herokuapp.com/)
-
-![screenshot.png](/../main/assets/images/screenshot.png)
-
 ### Technologies Used
 - HTML
 - CSS / [Bootstrap](https://getbootstrap.com/)
 - JavaScript
 - [Node.js](https://nodejs.org/en/)
 - [Express.js](https://expressjs.com/)
+
+![screenshot.png](/../main/assets/images/screenshot.png)
+
+### Live View on Heroku
+[https://protected-dusk-42650.herokuapp.com/](https://protected-dusk-42650.herokuapp.com/)
 
 ## Table of Contents
 - [Installation](#installation)
