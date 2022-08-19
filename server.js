@@ -6,7 +6,7 @@ const fs = require('fs');
 const apiRoutes = require('./routes/apiRoutes');
 const htmlRoutes = require('./routes/htmlRoutes');
 
-// instruct server to make certain files readily available
+// instruct server to make files in 'public' dir readily available
 app.use(express.static('public'));
 
 // parse incoming string & array data

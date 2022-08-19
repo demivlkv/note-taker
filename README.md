@@ -13,7 +13,6 @@ This is an easy-to-use note-taking web application that is intended for users to
 - JavaScript
 - [Node.js](https://nodejs.org/en/)
 - [Express.js](https://expressjs.com/)
-- [UUID](https://github.com/uuidjs/uuid#readme)
 
 ## Table of Contents
 - [Installation](#installation)
