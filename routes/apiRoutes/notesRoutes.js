@@ -21,19 +21,23 @@ router.post('/notes', (req, res) => {
     fs.writeFile('./db/db.json', JSON.stringify(db, null, 2), function(err) {
         if (err) throw err;
         res.json(note);
-        console.log('Note saved!');
+        console.log('SUCCESS: Note has been saved!');
     })
 });
 
-// DELETE note according by ID
+// DELETE note by ID
 router.delete('/notes/:id', (req, res) => {
     const { id } = req.params;
     let notesIndex = db.findIndex(note => note.id == id);
 
     db.splice(notesIndex, 1);
 
-    res.json(db);
-    console.log('Note deleted!');
+    // re-write db.json to reflect changes
+    fs.writeFile('./db/db.json', JSON.stringify(db, null, 2), function(err) {
+        if (err) throw err;
+        res.json(db);
+        console.log('SUCCESS: Note has been deleted!');
+    })
 });
 
 module.exports = router;
