@@ -13,11 +13,12 @@ router.get('/notes', (req, res) => {
 // POST request to add a note to array
 router.post('/notes', (req, res) => {
     let note = req.body;
-    // set unique id to notes
+    
+    // set unique id to each note
     note.id = uuidv4();
     db.push(note);
 
-    // write note to db.json & re-write db.json
+    // re-write db.json with new note
     fs.writeFile('./db/db.json', JSON.stringify(db, null, 2), function(err) {
         if (err) throw err;
         res.json(note);
