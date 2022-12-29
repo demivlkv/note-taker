@@ -15,7 +15,7 @@ This is an easy-to-use note-taking web application that is intended for users to
 [https://protected-dusk-42650.herokuapp.com/](https://protected-dusk-42650.herokuapp.com/)
 
 ## Installation
-1. To install this application for local development, `git clone` this repository, or download the `.zip` file in the dropdown after clicking the green ‘Code’ button at the top of this repository—as long as it is in your local branch.
+1. To install this application for local development, `git clone` this repository, or download the `.zip` file in the dropdown after clicking the ‘Code’ button at the top of this repository—as long as it is in your local branch.
 2. Ensure Node.js is installed in your code editor of choice.
 3. Install [Express.js](https://expressjs.com/) node package by entering the following in the command line of terminal:
 ```
